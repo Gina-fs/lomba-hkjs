@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Rangkaian lomba Hari Kesehatan Jiwa Sedunia 2026 yang diselenggarakan oleh RS Mutiara Sukma."
+    >
+
+    <title>
+        HKJS 2026 | RS Mutiara Sukma
+    </title>
+
+
+    <style>
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        /* =====================================================
+           ROOT / WARNA
+        ===================================================== */
+
+        :root {
+
+            --magenta: #d1008f;
+            --magenta-light: #f725a9;
+            --magenta-soft: #fce4f5;
+
+            --purple: #6a0dad;
+            --purple-dark: #3b0764;
+            --purple-soft: #f0e5fa;
+
+            --white: #ffffff;
+
+            --text: #29213a;
+            --text-soft: #665f70;
+
+            --gray: #777777;
+
+            --background: #fbf8ff;
+
+            --border: #eee5f5;
+
+            --shadow:
+                0 15px 45px rgba(83, 23, 112, 0.10);
+
+            --shadow-hover:
+                0 22px 55px rgba(83, 23, 112, 0.18);
+        }
+
+
+        /* =====================================================
+           BODY
+        ===================================================== */
+
+        body {
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            background:
+                var(--background);
+
+            color:
+                var(--text);
+
+            min-height: 100vh;
+
+            overflow-x: hidden;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        header {
+
+            position: relative;
+
+            background:
+                radial-gradient(
+                    circle at 85% 10%,
+                    rgba(247, 37, 169, 0.40),
+                    transparent 32%
+                ),
+
+                radial-gradient(
+                    circle at 10% 90%,
+                    rgba(106, 13, 173, 0.45),
+                    transparent 35%
+                ),
+
+                linear-gradient(
+                    135deg,
+                    var(--purple-dark),
+                    var(--purple),
+                    var(--magenta)
+                );
+
+            color: var(--white);
+
+            padding:
+                20px 7%;
+
+            box-shadow:
+                0 5px 30px
+                rgba(59, 7, 100, 0.20);
+
+            z-index: 10;
+        }
+
+
+        .navbar {
+
+            width: 100%;
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+        }
+
+
+        .brand {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+        }
+
+
+        /* =====================================================
+           LOGO RS
+           
+           File:
+           assets/logo-rs.png
+        ===================================================== */
+
+        .logo {
+
+            width: 60px;
+
+            height: 60px;
+
+            object-fit: contain;
+
+            background:
+                var(--white);
+
+            border-radius: 14px;
+
+            padding: 5px;
+
+            box-shadow:
+                0 8px 25px
+                rgba(0, 0, 0, 0.15);
+        }
+
+
+        .brand-text h1 {
+
+            font-size: 21px;
+
+            font-weight: 800;
+
+            margin-bottom: 5px;
+
+            letter-spacing: 0.2px;
+        }
+
+
+        .brand-text p {
+
+            font-size: 13px;
+
+            opacity: 0.82;
+
+            line-height: 1.4;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+
+            position: relative;
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            padding:
+                75px 7% 55px;
+
+            text-align: center;
+        }
+
+
+        /*
+           Decorative background
+        */
+
+        .hero::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 260px;
+
+            height: 260px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(209, 0, 143, 0.07);
+
+            filter:
+                blur(10px);
+
+            top: 20px;
+
+            left: -100px;
+
+            z-index: -1;
+        }
+
+
+        .hero::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 300px;
+
+            height: 300px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(106, 13, 173, 0.07);
+
+            filter:
+                blur(10px);
+
+            right: -130px;
+
+            bottom: -100px;
+
+            z-index: -1;
+        }
+
+
+        /* =====================================================
+           BADGE
+        ===================================================== */
+
+        .badge {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding:
+                9px 18px;
+
+            border-radius:
+                50px;
+
+            background:
+                var(--magenta-soft);
+
+            color:
+                var(--purple);
+
+            font-size:
+                12px;
+
+            font-weight:
+                800;
+
+            letter-spacing:
+                0.5px;
+
+            margin-bottom:
+                20px;
+
+            border:
+                1px solid
+                rgba(209, 0, 143, 0.10);
+        }
+
+
+        /* =====================================================
+           HERO TITLE
+        ===================================================== */
+
+        .hero h2,
+        .hero h3 {
+
+            font-size:
+                clamp(
+                    22px,
+                    3.2vw,
+                    34px
+                );
+
+            line-height:
+                1.25;
+
+            font-weight:
+                800;
+
+            letter-spacing:
+                -0.5px;
+
+            margin-bottom:
+                22px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--purple),
+                    var(--magenta)
+                );
+
+            -webkit-background-clip:
+                text;
+
+            background-clip:
+                text;
+
+            -webkit-text-fill-color:
+                transparent;
+        }
+
+
+        /* =====================================================
+           HERO TEXT
+        ===================================================== */
+
+        .hero p {
+
+            max-width:
+                760px;
+
+            margin:
+                0 auto;
+
+            color:
+                var(--text-soft);
+
+            font-size:
+                15px;
+
+            line-height:
+                1.85;
+        }
+
+
+        .hero-highlight {
+
+            display: block;
+
+            margin-top:
+                20px;
+
+            color:
+                var(--purple);
+
+            font-weight:
+                800;
+
+            font-size:
+                15px;
+        }
+
+
+        /* =====================================================
+           FILTER SECTION
+        ===================================================== */
+
+        .filter-section {
+
+            max-width:
+                1200px;
+
+            margin:
+                0 auto;
+
+            padding:
+                0 7% 30px;
+        }
+
+
+        .filter-title {
+
+            text-align:
+                center;
+
+            margin-bottom:
+                15px;
+
+            color:
+                var(--text-soft);
+
+            font-size:
+                13px;
+        }
+
+
+        .filter-wrapper {
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            align-items:
+                center;
+
+            gap:
+                10px;
+
+            flex-wrap:
+                wrap;
+        }
+
+
+        .filter-btn {
+
+            border:
+                1px solid
+                var(--border);
+
+            padding:
+                11px 20px;
+
+            border-radius:
+                50px;
+
+            cursor:
+                pointer;
+
+            background:
+                var(--white);
+
+            color:
+                var(--purple);
+
+            font-weight:
+                700;
+
+            font-size:
+                13px;
+
+            transition:
+                all 0.25s ease;
+
+            box-shadow:
+                0 4px 15px
+                rgba(83, 23, 112, 0.04);
+        }
+
+
+        .filter-btn:hover {
+
+            transform:
+                translateY(-2px);
+
+            border-color:
+                var(--magenta);
+
+            color:
+                var(--magenta);
+        }
+
+
+        .filter-btn.active {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--purple),
+                    var(--magenta)
+                );
+
+            color:
+                var(--white);
+
+            border-color:
+                transparent;
+
+            box-shadow:
+                0 8px 20px
+                rgba(209, 0, 143, 0.20);
+        }
+
+
+        /* =====================================================
+           COMPETITION CONTAINER
+        ===================================================== */
+
+        .competition-container {
+
+            width:
+                100%;
+
+            max-width:
+                1200px;
+
+            margin:
+                auto;
+
+            padding:
+                0 7% 80px;
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap:
+                30px;
+        }
+
+
+        /* =====================================================
+           CARD
+        ===================================================== */
+
+        .card {
+
+            background:
+                var(--white);
+
+            border-radius:
+                22px;
+
+            overflow:
+                hidden;
+
+            border:
+                1px solid
+                var(--border);
+
+            box-shadow:
+                var(--shadow);
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+
+            animation:
+                fadeUp 0.6s ease both;
+        }
+
+
+        .card:hover {
+
+            transform:
+                translateY(-7px);
+
+            box-shadow:
+                var(--shadow-hover);
+        }
+
+
+        /* =====================================================
+           POSTER
+        ===================================================== */
+
+        .poster-wrapper {
+
+            position:
+                relative;
+
+            width:
+                100%;
+
+            height:
+                420px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f0dcff,
+                    #ffd9ef
+                );
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            padding:
+                10px;
+
+            overflow:
+                hidden;
+        }
+
+
+        .poster {
+
+            display:
+                block;
+
+            width:
+                100%;
+
+            height:
+                100%;
+
+            object-fit:
+                contain;
+
+            object-position:
+                center;
+        }
+
+
+        /* =====================================================
+           TYPE LABEL
+        ===================================================== */
+
+        .competition-type {
+
+            position:
+                absolute;
+
+            top:
+                16px;
+
+            left:
+                16px;
+
+            padding:
+                8px 14px;
+
+            border-radius:
+                50px;
+
+            background:
+                rgba(255, 255, 255, 0.94);
+
+            color:
+                var(--purple);
+
+            font-size:
+                11px;
+
+            font-weight:
+                800;
+
+            letter-spacing:
+                0.5px;
+
+            box-shadow:
+                0 6px 20px
+                rgba(0, 0, 0, 0.13);
+
+            z-index:
+                2;
+        }
+
+
+        /* =====================================================
+           CARD CONTENT
+        ===================================================== */
+
+        .card-content {
+
+            padding:
+                25px;
+        }
+
+
+        .card-content h3 {
+
+            color:
+                var(--purple-dark);
+
+            font-size:
+                22px;
+
+            line-height:
+                1.3;
+
+            margin-bottom:
+                11px;
+        }
+
+
+        .card-content p {
+
+            color:
+                var(--text-soft);
+
+            font-size:
+                14px;
+
+            line-height:
+                1.7;
+
+            min-height:
+                72px;
+
+            margin-bottom:
+                22px;
+        }
+
+
+        /* =====================================================
+           REGISTER BUTTON
+        ===================================================== */
+
+        .register-btn {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            width:
+                100%;
+
+            min-height:
+                48px;
+
+            text-align:
+                center;
+
+            text-decoration:
+                none;
+
+            padding:
+                13px 20px;
+
+            border-radius:
+                12px;
+
+            color:
+                var(--white);
+
+            font-size:
+                14px;
+
+            font-weight:
+                800;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--purple),
+                    var(--magenta)
+                );
+
+            box-shadow:
+                0 7px 18px
+                rgba(106, 13, 173, 0.18);
+
+            transition:
+                all 0.25s ease;
+        }
+
+
+        .register-btn:hover {
+
+            transform:
+                translateY(-2px);
+
+            box-shadow:
+                0 10px 25px
+                rgba(209, 0, 143, 0.28);
+        }
+
+
+        .register-btn:active {
+
+            transform:
+                translateY(0);
+        }
+
+
+        /* =====================================================
+           EMPTY STATE
+        ===================================================== */
+
+        .empty-state {
+
+            display:
+                none;
+
+            grid-column:
+                1 / -1;
+
+            text-align:
+                center;
+
+            padding:
+                50px 20px;
+
+            color:
+                var(--gray);
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--purple-dark),
+                    #26033f
+                );
+
+            color:
+                rgba(255,255,255,0.8);
+
+            text-align:
+                center;
+
+            padding:
+                28px 20px;
+
+            font-size:
+                13px;
+
+            line-height:
+                1.7;
+        }
+
+
+        footer strong {
+
+            color:
+                #ff72ca;
+        }
+
+
+        /* =====================================================
+           ANIMATION
+        ===================================================== */
+
+        @keyframes fadeUp {
+
+            from {
+
+                opacity:
+                    0;
+
+                transform:
+                    translateY(15px);
+            }
+
+            to {
+
+                opacity:
+                    1;
+
+                transform:
+                    translateY(0);
+            }
+        }
+
+
+        /* =====================================================
+           TABLET
+        ===================================================== */
+
+        @media (max-width: 850px) {
+
+            .competition-container {
+
+                grid-template-columns:
+                    1fr;
+
+                max-width:
+                    650px;
+            }
+
+
+            .hero {
+
+                padding-top:
+                    60px;
+            }
+
+
+            .poster-wrapper {
+
+                height:
+                    450px;
+            }
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 500px) {
+
+            header {
+
+                padding:
+                    15px 5%;
+            }
+
+
+            .logo {
+
+                width:
+                    50px;
+
+                height:
+                    50px;
+
+                border-radius:
+                    11px;
+            }
+
+
+            .brand {
+
+                gap:
+                    11px;
+            }
+
+
+            .brand-text h1 {
+
+                font-size:
+                    17px;
+            }
+
+
+            .brand-text p {
+
+                font-size:
+                    12px;
+            }
+
+
+            .hero {
+
+                padding:
+                    48px 5% 40px;
+            }
+
+
+            .badge {
+
+                font-size:
+                    10px;
+
+                padding:
+                    8px 13px;
+            }
+
+
+            .hero h2,
+            .hero h3 {
+
+                font-size:
+                    20px !important;
+
+                line-height:
+                    1.3;
+
+                letter-spacing:
+                    -0.3px;
+            }
+
+
+            .hero p {
+
+                font-size:
+                    13.5px;
+
+                line-height:
+                    1.8;
+            }
+
+
+            .filter-section {
+
+                padding:
+                    0 5% 25px;
+            }
+
+
+            .filter-btn {
+
+                padding:
+                    9px 15px;
+
+                font-size:
+                    12px;
+            }
+
+
+            .competition-container {
+
+                padding:
+                    0 5% 60px;
+
+                gap:
+                    22px;
+            }
+
+
+            .poster-wrapper {
+
+                height:
+                    380px;
+
+                padding:
+                    6px;
+            }
+
+
+            .card-content {
+
+                padding:
+                    21px;
+            }
+
+
+            .card-content h3 {
+
+                font-size:
+                    20px;
+            }
+
+
+            .card-content p {
+
+                min-height:
+                    auto;
+
+                font-size:
+                    13.5px;
+            }
+
+
+            .register-btn {
+
+                font-size:
+                    13px;
+            }
+        }
+
+
+        /* =====================================================
+           REDUCED MOTION
+        ===================================================== */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+
+                scroll-behavior:
+                    auto !important;
+
+                animation-duration:
+                    0.01ms !important;
+
+                animation-iteration-count:
+                    1 !important;
+
+                transition-duration:
+                    0.01ms !important;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header>
+
+        <div class="navbar">
+
+            <div class="brand">
+
+                <!--
+                    =================================================
+                    LOGO RS
+
+                    Simpan logo RS di:
+
+                    assets/logo-rs.png
+
+                    Jika nama file berbeda, ubah src di bawah.
+                    =================================================
+                -->
+
+                <img
+                    src="assets/logo-rs.png"
+                    alt="Logo RS Mutiara Sukma"
+                    class="logo"
+                    width="60"
+                    height="60"
+                >
+
+
+                <div class="brand-text">
+
+                    <h1>
+                        RS Mutiara Sukma
+                    </h1>
+
+                    <p>
+                        Hari Kesehatan Jiwa Sedunia 2026
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="hero">
+
+        <div class="badge">
+
+            HARI KESEHATAN JIWA SEDUNIA 2026
+
+        </div>
+
+
+        <h2>
+
+            MENDENGARKAN PENGALAMAN HIDUP
+            <br>
+
+            SUARA NYATA, PERUBAHAN NYATA
+
+        </h2>
+
+
+        <p>
+
+            RS Mutiara Sukma mengajak kita untuk mendengarkan,
+            memahami, dan menghargai setiap pengalaman hidup.
+            Karena setiap cerita layak didengar,
+            dan setiap suara dapat membawa perubahan.
+
+            <br><br>
+
+            Dalam semangat tersebut, mari ikut berpartisipasi
+            dalam berbagai lomba dalam rangka memperingati
+            Hari Kesehatan Jiwa Sedunia 2026.
+
+            Tuangkan kreativitas, gagasan, dan ceritamu melalui
+            karya yang bermakna untuk bersama-sama menyuarakan
+            pentingnya kesehatan jiwa.
+
+            <span class="hero-highlight">
+                Pilih lombamu, tunjukkan karyamu,
+                dan jadilah bagian dari perubahan nyata.
+            </span>
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FILTER
+    ====================================================== -->
+
+    <section class="filter-section">
+
+        <div class="filter-title">
+            Pilih kategori lomba
+        </div>
+
+
+        <div class="filter-wrapper">
+
+            <button
+                type="button"
+                class="filter-btn active"
+                aria-pressed="true"
+                onclick="filterCompetition('all', this)"
+            >
+                Semua Lomba
+            </button>
+
+
+            <button
+                type="button"
+                class="filter-btn"
+                aria-pressed="false"
+                onclick="filterCompetition('eksternal', this)"
+            >
+                Eksternal
+            </button>
+
+
+            <button
+                type="button"
+                class="filter-btn"
+                aria-pressed="false"
+                onclick="filterCompetition('internal', this)"
+            >
+                Internal
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         COMPETITION CARDS
+    ====================================================== -->
+
+    <main class="competition-container" id="competitionContainer">
+
+
+        <!-- =================================================
+             LOMBA EKSTERNAL
+        ================================================== -->
+
+        <article
+            class="card"
+            data-type="eksternal"
+        >
+
+            <div class="poster-wrapper">
+
+                <!--
+                    POSTER EKSTERNAL
+
+                    File:
+                    assets/lomba-eksternal.jpeg
+                -->
+
+                <img
+                    src="assets/lomba-eksternal.jpeg"
+                    alt="Poster Lomba Video Pendek Mental Health Starts With Us HKJS 2026"
+                    class="poster"
+                    width="800"
+                    height="1000"
+                    loading="lazy"
+                >
+
+
+                <span class="competition-type">
+                    EKSTERNAL
+                </span>
+
+            </div>
+
+
+            <div class="card-content">
+
+                <h3>
+                    Lomba Video Pendek
+                </h3>
+
+
+                <p>
+                    Lomba video pendek bertema "Mental Health Starts With Us" untuk masyarakat umum. Angkat pesan pentingnya kesehatan jiwa dan kepedulian di tempat kerja.
+			<br>
+			Deadline: 16 Oktober 2026, jam 23.59 WITA
+			<br> 
+			Narahubung: 085337676068 (Shofi) dan 081326316960 (Yayan)
+                </p>
+
+
+                <!--
+                    GANTI LINK INI DENGAN GOOGLE FORM
+                -->
+
+                <a
+                    href="https://forms.gle/GeNJSuqEipGJRZt37"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="register-btn"
+                >
+                    Daftar Sekarang →
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             LOMBA INTERNAL 1
+        ================================================== -->
+
+        <article
+            class="card"
+            data-type="internal"
+        >
+
+            <div class="poster-wrapper">
+
+                <img
+                    src="assets/lomba-internal-1.jpeg"
+                    alt="Poster Lomba Case Solving RSMS HKJS 2026"
+                    class="poster"
+                    width="800"
+                    height="1000"
+                    loading="lazy"
+                >
+
+
+                <span class="competition-type">
+                    INTERNAL
+                </span>
+
+            </div>
+
+
+            <div class="card-content">
+
+                <h3>
+                    Case Solving RSMS
+                </h3>
+
+
+                <p>
+                    Kompetisi penulisan karya pemecahan masalah di lingkungan RS Mutiara Sukma untuk pegawai (individu atau tim maks. 3 orang).
+			<br>
+			Deadline: 16 Oktober 2026, jam 23.59 WITA
+			<br>
+			Narahubung: 081916010192 (Sukran) dan 087862236921 (Regina)
+                </p>
+
+
+                <!-- GANTI LINK GOOGLE FORM -->
+
+                <a
+                    href="https://forms.gle/h8QkG2Ddtaq8v7wm8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="register-btn"
+                >
+                    Daftar Sekarang →
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             LOMBA INTERNAL 2
+        ================================================== -->
+
+        <article
+            class="card"
+            data-type="internal"
+        >
+
+            <div class="poster-wrapper">
+
+                <img
+                    src="assets/lomba-internal-2.jpeg"
+                    alt="Poster Lomba Poster Digital Healthy Workplace Starts With Me HKJS 2026"
+                    class="poster"
+                    width="800"
+                    height="1000"
+                    loading="lazy"
+                >
+
+
+                <span class="competition-type">
+                    INTERNAL
+                </span>
+
+            </div>
+
+
+            <div class="card-content">
+
+                <h3>
+                    Lomba Poster Digital
+                </h3>
+
+
+                <p>
+                    Lomba desain poster digital bertema "Healthy Workplace Starts With Me" untuk mengampanyekan kesehatan jiwa dan lingkungan kerja sehat.
+			<br>
+			Deadline: 16 Oktober 2026, jam 23.59 WITA
+			<br>
+			Narahubung: 081916730164 (Rodi)
+                </p>
+
+
+                <!-- GANTI LINK GOOGLE FORM -->
+
+                <a
+                    href="https://forms.gle/Ezb383W8QBSbAiWKA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="register-btn"
+                >
+                    Daftar Sekarang →
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             LOMBA INTERNAL 3
+        ================================================== -->
+
+        <article
+            class="card"
+            data-type="internal"
+        >
+
+            <div class="poster-wrapper">
+
+                <img
+                    src="assets/lomba-internal-3.jpeg"
+                    alt="Poster Lomba Foto Kreatif My Team, My Support System HKJS 2026"
+                    class="poster"
+                    width="800"
+                    height="1000"
+                    loading="lazy"
+                >
+
+
+                <span class="competition-type">
+                    INTERNAL
+                </span>
+
+            </div>
+
+
+            <div class="card-content">
+
+                <h3>
+                    Lomba Foto Kreatif
+                </h3>
+
+
+                <p>
+                    Lomba foto kreatif bertema "My Team, My Support System" yang menggambarkan kebersamaan, kepedulian, dan kerja sama tim antar unit kerja.
+			<br>
+			Deadline: 16 Oktober 2026, jam 23.59 WITA
+			<br>
+			Narahubung: 085337189854 (Dessry)
+                </p>
+
+
+                <!-- GANTI LINK GOOGLE FORM -->
+
+                <a
+                    href="https://forms.gle/FZ3rPYV8Vh5znabR7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="register-btn"
+                >
+                    Daftar Sekarang →
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             EMPTY STATE
+        ================================================== -->
+
+        <div
+            class="empty-state"
+            id="emptyState"
+            role="status"
+            aria-live="polite"
+        >
+            Tidak ada lomba pada kategori ini.
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <div>
+
+            © 2026
+            <strong>
+                RS Mutiara Sukma
+            </strong>
+
+        </div>
+
+
+        <div>
+
+            Dalam rangka memperingati
+            Hari Kesehatan Jiwa Sedunia 2026
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        function filterCompetition(type, button) {
+
+            const cards =
+                document.querySelectorAll(".card");
+
+            const buttons =
+                document.querySelectorAll(".filter-btn");
+
+            const emptyState =
+                document.getElementById("emptyState");
+
+
+            /*
+                Reset tombol
+            */
+
+            buttons.forEach(function(btn) {
+
+                btn.classList.remove("active");
+                btn.setAttribute("aria-pressed", "false");
+
+            });
+
+
+            /*
+                Aktifkan tombol pilihan
+            */
+
+            button.classList.add("active");
+            button.setAttribute("aria-pressed", "true");
+
+
+            /*
+                Hitung jumlah kartu
+                yang ditampilkan
+            */
+
+            let visibleCards = 0;
+
+
+            cards.forEach(function(card) {
+
+                const cardType =
+                    card.dataset.type;
+
+
+                /*
+                    Semua lomba
+                */
+
+                if (type === "all") {
+
+                    card.style.display =
+                        "block";
+
+                    visibleCards++;
+
+                    return;
+                }
+
+
+                /*
+                    Berdasarkan kategori
+                */
+
+                if (cardType === type) {
+
+                    card.style.display =
+                        "block";
+
+                    visibleCards++;
+
+                } else {
+
+                    card.style.display =
+                        "none";
+
+                }
+
+            });
+
+
+            /*
+                Empty state
+            */
+
+            if (visibleCards === 0) {
+
+                emptyState.style.display =
+                    "block";
+
+            } else {
+
+                emptyState.style.display =
+                    "none";
+
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
