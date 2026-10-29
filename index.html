@@ -969,10 +969,19 @@
             overflow: auto;
         }
 
-        /* Video Player in Modal */
+        /* Video Player & Iframe in Modal */
         #videoPlayerElement {
             width: 100%;
             max-height: 68vh;
+            background: #000;
+            display: none;
+        }
+
+        #videoIframeElement {
+            width: 100%;
+            height: 68vh;
+            min-height: 380px;
+            border: none;
             background: #000;
             display: block;
         }
@@ -1279,13 +1288,13 @@
                         <span class="rank-pill">🥇 JUARA 1</span>
                         <span class="rank-badge-ribbon">Terbaik I</span>
                     </div>
-                    <div class="media-preview-box" onclick="openVideoModal('assets/juara%201%20video%20eksternal.mp4', 'Rahasia Budi', 'SMAN 1 UTAN (@pena_Smaut)', 'video/mp4')">
+                    <div class="media-preview-box" onclick="openVideoModal('https://drive.google.com/file/d/14HvwbfMFfmoyhrxT75j9IgVIEpqe0a2k/view?usp=drivesdk', 'Rahasia Budi', 'SMAN 1 UTAN (@pena_Smaut)')">
                         <img src="assets/video%20eksternal.jpeg" alt="Thumbnail Rahasia Budi SMAN 1 Utan" loading="lazy">
                         <div class="media-overlay">
                             <div class="play-pulse-btn" title="Tonton Video">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                             </div>
-                            <span class="overlay-caption">▶ Tonton Video MP4 (86.9 MB)</span>
+                            <span class="overlay-caption">▶ Tonton Video di Google Drive</span>
                         </div>
                     </div>
                     <div class="card-body">
@@ -1298,15 +1307,15 @@
                             </p>
                         </div>
                         <div class="card-actions">
-                            <button class="btn-primary-action" onclick="openVideoModal('assets/juara%201%20video%20eksternal.mp4', 'Rahasia Budi', 'SMAN 1 UTAN (@pena_Smaut)', 'video/mp4')">
+                            <button class="btn-primary-action" onclick="openVideoModal('https://drive.google.com/file/d/14HvwbfMFfmoyhrxT75j9IgVIEpqe0a2k/view?usp=drivesdk', 'Rahasia Budi', 'SMAN 1 UTAN (@pena_Smaut)')">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                                 Putar Video Lengkap
                             </button>
                             <div class="btn-secondary-row">
-                                <a href="assets/juara%201%20video%20eksternal.mp4" target="_blank" class="btn-secondary-action" title="Buka video di tab baru">
+                                <a href="https://drive.google.com/file/d/14HvwbfMFfmoyhrxT75j9IgVIEpqe0a2k/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="btn-secondary-action" title="Buka video di Google Drive">
                                     <span>↗</span> Tab Baru
                                 </a>
-                                <a href="assets/juara%201%20video%20eksternal.mp4" download="Juara-1-Rahasia-Budi-SMAN-1-Utan.mp4" class="btn-secondary-action" title="Unduh file video">
+                                <a href="https://drive.google.com/file/d/14HvwbfMFfmoyhrxT75j9IgVIEpqe0a2k/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="btn-secondary-action" title="Buka / Unduh di Google Drive">
                                     <span>⬇</span> Unduh Video
                                 </a>
                             </div>
@@ -1320,13 +1329,13 @@
                         <span class="rank-pill">🥈 JUARA 2</span>
                         <span class="rank-badge-ribbon">Terbaik II</span>
                     </div>
-                    <div class="media-preview-box" onclick="openVideoModal('assets/juara%202%20video%20eksternal.mp4', 'Pintu yang Selalu Terbuka', 'INKES YARSI MATARAM (@l.iyanaa_)', 'video/mp4')">
+                    <div class="media-preview-box" onclick="openVideoModal('https://drive.google.com/drive/folders/1FbpOpvpUUwHxNMzYfdkHAkAIANBpVmUb', 'Pintu yang Selalu Terbuka', 'INKES YARSI MATARAM (@l.iyanaa_)')">
                         <img src="assets/video%20eksternal.jpeg" alt="Thumbnail Pintu yang Selalu Terbuka INKES YARSI Mataram" loading="lazy">
                         <div class="media-overlay">
                             <div class="play-pulse-btn" title="Tonton Video">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                             </div>
-                            <span class="overlay-caption">▶ Tonton Video MP4 (191.7 MB)</span>
+                            <span class="overlay-caption">▶ Tonton Video di Google Drive</span>
                         </div>
                     </div>
                     <div class="card-body">
@@ -1339,15 +1348,15 @@
                             </p>
                         </div>
                         <div class="card-actions">
-                            <button class="btn-primary-action" onclick="openVideoModal('assets/juara%202%20video%20eksternal.mp4', 'Pintu yang Selalu Terbuka', 'INKES YARSI MATARAM (@l.iyanaa_)', 'video/mp4')">
+                            <button class="btn-primary-action" onclick="openVideoModal('https://drive.google.com/drive/folders/1FbpOpvpUUwHxNMzYfdkHAkAIANBpVmUb', 'Pintu yang Selalu Terbuka', 'INKES YARSI MATARAM (@l.iyanaa_)')">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                                 Putar Video Lengkap
                             </button>
                             <div class="btn-secondary-row">
-                                <a href="assets/juara%202%20video%20eksternal.mp4" target="_blank" class="btn-secondary-action">
+                                <a href="https://drive.google.com/drive/folders/1FbpOpvpUUwHxNMzYfdkHAkAIANBpVmUb" target="_blank" rel="noopener noreferrer" class="btn-secondary-action" title="Buka video di Google Drive">
                                     <span>↗</span> Tab Baru
                                 </a>
-                                <a href="assets/juara%202%20video%20eksternal.mp4" download="Juara-2-Pintu-Selalu-Terbuka-INKES-Yarsi.mp4" class="btn-secondary-action">
+                                <a href="https://drive.google.com/drive/folders/1FbpOpvpUUwHxNMzYfdkHAkAIANBpVmUb" target="_blank" rel="noopener noreferrer" class="btn-secondary-action" title="Buka / Unduh di Google Drive">
                                     <span>⬇</span> Unduh Video
                                 </a>
                             </div>
@@ -1361,13 +1370,13 @@
                         <span class="rank-pill">🥉 JUARA 3</span>
                         <span class="rank-badge-ribbon">Terbaik III</span>
                     </div>
-                    <div class="media-preview-box" onclick="openVideoModal('assets/juara%203%20video%20eksternal.MOV', 'Tak Apa untuk Tak Baik-Baik Saja', 'DMPTSP LOTENG (@dyahmadyawati)', 'video/quicktime')">
+                    <div class="media-preview-box" onclick="openVideoModal('https://drive.google.com/file/d/1m6fQkvLLRYdXG5IsP1CEujidJGfN7yVU/view?usp=drive_link', 'Tak Apa untuk Tak Baik-Baik Saja', 'DMPTSP LOTENG (@dyahmadyawati)')">
                         <img src="assets/video%20eksternal.jpeg" alt="Thumbnail Tak Apa untuk Tak Baik-Baik Saja DMPTSP Loteng" loading="lazy">
                         <div class="media-overlay">
                             <div class="play-pulse-btn" title="Tonton Video">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                             </div>
-                            <span class="overlay-caption">▶ Tonton Video MOV (166.0 MB)</span>
+                            <span class="overlay-caption">▶ Tonton Video di Google Drive</span>
                         </div>
                     </div>
                     <div class="card-body">
@@ -1380,15 +1389,15 @@
                             </p>
                         </div>
                         <div class="card-actions">
-                            <button class="btn-primary-action" onclick="openVideoModal('assets/juara%203%20video%20eksternal.MOV', 'Tak Apa untuk Tak Baik-Baik Saja', 'DMPTSP LOTENG (@dyahmadyawati)', 'video/quicktime')">
+                            <button class="btn-primary-action" onclick="openVideoModal('https://drive.google.com/file/d/1m6fQkvLLRYdXG5IsP1CEujidJGfN7yVU/view?usp=drive_link', 'Tak Apa untuk Tak Baik-Baik Saja', 'DMPTSP LOTENG (@dyahmadyawati)')">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                                 Putar Video Lengkap
                             </button>
                             <div class="btn-secondary-row">
-                                <a href="assets/juara%203%20video%20eksternal.MOV" target="_blank" class="btn-secondary-action">
+                                <a href="https://drive.google.com/file/d/1m6fQkvLLRYdXG5IsP1CEujidJGfN7yVU/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn-secondary-action" title="Buka video di Google Drive">
                                     <span>↗</span> Tab Baru
                                 </a>
-                                <a href="assets/juara%203%20video%20eksternal.MOV" download="Juara-3-Tak-Apa-Tak-Baik-Baik-Saja-DMPTSP-Loteng.mov" class="btn-secondary-action">
+                                <a href="https://drive.google.com/file/d/1m6fQkvLLRYdXG5IsP1CEujidJGfN7yVU/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn-secondary-action" title="Buka / Unduh di Google Drive">
                                     <span>⬇</span> Unduh Video
                                 </a>
                             </div>
@@ -1904,12 +1913,13 @@
                 <button type="button" class="modal-close-btn" onclick="closeVideoModal()" aria-label="Tutup pemutar video">✕</button>
             </div>
 
-            <div class="modal-fallback-alert" id="movFallbackNotice">
-                <strong>Catatan Format:</strong> Video ini menggunakan format MOV / QuickTime. Jika peramban Anda tidak langsung memutar video, Anda dapat menggunakan tombol <strong>Buka di Tab Baru</strong> atau <strong>Unduh Video</strong> di bawah ini.
+            <div class="modal-fallback-alert" id="driveVideoNotice" style="display: block; background: #eff6ff; border-color: #3b82f6; color: #1d4ed8;">
+                <strong>Google Drive Streaming:</strong> Video disematkan melalui Google Drive. Anda dapat menonton langsung di sini atau klik tombol <strong>Buka di Tab Baru</strong> untuk menonton langsung di Google Drive.
             </div>
 
-            <div class="modal-body">
-                <video id="videoPlayerElement" controls playsinline controlsList="nodownload" preload="auto">
+            <div class="modal-body" style="padding: 0; background: #000; min-height: 380px;">
+                <iframe id="videoIframeElement" src="" allow="autoplay; fullscreen" allowfullscreen style="width: 100%; height: 68vh; border: none; background: #000; display: block;" title="Pemutar Video Google Drive"></iframe>
+                <video id="videoPlayerElement" controls playsinline controlsList="nodownload" preload="auto" style="display: none; width: 100%; max-height: 68vh; background: #000;">
                     Browser Anda tidak mendukung pemutar video HTML5.
                 </video>
             </div>
@@ -1919,11 +1929,11 @@
                     <span>👤</span> Pengunggah / Asal Instansi
                 </div>
                 <div class="modal-actions-group">
-                    <a href="#" id="videoOpenNewTabBtn" target="_blank" class="btn-modal-action btn-modal-secondary">
+                    <a href="#" id="videoOpenNewTabBtn" target="_blank" rel="noopener noreferrer" class="btn-modal-action btn-modal-secondary">
                         <span>↗</span> Buka di Tab Baru
                     </a>
-                    <a href="#" id="videoDownloadBtn" download class="btn-modal-action btn-modal-primary">
-                        <span>⬇</span> Unduh Video Asli
+                    <a href="#" id="videoDownloadBtn" target="_blank" rel="noopener noreferrer" class="btn-modal-action btn-modal-primary">
+                        <span>⬇</span> Buka / Unduh di Drive
                     </a>
                 </div>
             </div>
@@ -2031,15 +2041,29 @@
         }
 
         /* -----------------------------------------------------
-           2. VIDEO MODAL FUNCTIONS
+           2. VIDEO MODAL FUNCTIONS (GOOGLE DRIVE & HTML5)
         ----------------------------------------------------- */
         const videoModalBackdrop = document.getElementById('videoModalBackdrop');
         const videoPlayer = document.getElementById('videoPlayerElement');
+        const videoIframe = document.getElementById('videoIframeElement');
         const videoTitle = document.getElementById('videoModalTitle');
         const videoAuthor = document.getElementById('videoModalAuthor');
         const videoOpenNewTabBtn = document.getElementById('videoOpenNewTabBtn');
         const videoDownloadBtn = document.getElementById('videoDownloadBtn');
-        const movFallbackNotice = document.getElementById('movFallbackNotice');
+        const driveVideoNotice = document.getElementById('driveVideoNotice');
+
+        function getDriveEmbedUrl(url) {
+            if (!url) return '';
+            const fileMatch = url.match(/\/file\/d\/([a-zA-Z0-9_-]+)/);
+            if (fileMatch && fileMatch[1]) {
+                return 'https://drive.google.com/file/d/' + fileMatch[1] + '/preview';
+            }
+            const folderMatch = url.match(/\/folders\/([a-zA-Z0-9_-]+)/);
+            if (folderMatch && folderMatch[1]) {
+                return 'https://drive.google.com/embeddedfolderview?id=' + folderMatch[1] + '#grid';
+            }
+            return url;
+        }
 
         function openVideoModal(videoSrc, title, author, mimeType) {
             videoTitle.textContent = title;
@@ -2048,50 +2072,64 @@
             videoOpenNewTabBtn.href = videoSrc;
             videoDownloadBtn.href = videoSrc;
 
-            // Bersihkan sumber lama
-            videoPlayer.pause();
-            while (videoPlayer.firstChild) {
-                videoPlayer.removeChild(videoPlayer.firstChild);
-            }
+            const isDrive = videoSrc.includes('drive.google.com');
 
-            // Tambahkan source utama
-            const source = document.createElement('source');
-            source.src = videoSrc;
-            if (mimeType) {
-                source.type = mimeType;
-            }
-            videoPlayer.appendChild(source);
-
-            // Jika format MOV, tambahkan source fallback mp4 & tampilkan panduan
-            if (videoSrc.toLowerCase().endsWith('.mov')) {
-                movFallbackNotice.style.display = 'block';
-                const sourceFallback = document.createElement('source');
-                sourceFallback.src = videoSrc;
-                sourceFallback.type = 'video/mp4';
-                videoPlayer.appendChild(sourceFallback);
+            if (isDrive) {
+                // Hentikan dan sembunyikan video player HTML5
+                if (videoPlayer) {
+                    videoPlayer.pause();
+                    videoPlayer.style.display = 'none';
+                    while (videoPlayer.firstChild) {
+                        videoPlayer.removeChild(videoPlayer.firstChild);
+                    }
+                }
+                // Tampilkan iframe Google Drive
+                if (videoIframe) {
+                    videoIframe.src = getDriveEmbedUrl(videoSrc);
+                    videoIframe.style.display = 'block';
+                }
+                if (driveVideoNotice) {
+                    driveVideoNotice.style.display = 'block';
+                }
             } else {
-                movFallbackNotice.style.display = 'none';
+                if (videoIframe) {
+                    videoIframe.src = '';
+                    videoIframe.style.display = 'none';
+                }
+                if (driveVideoNotice) {
+                    driveVideoNotice.style.display = 'none';
+                }
+                if (videoPlayer) {
+                    videoPlayer.pause();
+                    while (videoPlayer.firstChild) {
+                        videoPlayer.removeChild(videoPlayer.firstChild);
+                    }
+                    const source = document.createElement('source');
+                    source.src = videoSrc;
+                    if (mimeType) {
+                        source.type = mimeType;
+                    }
+                    videoPlayer.appendChild(source);
+                    videoPlayer.style.display = 'block';
+                    videoPlayer.load();
+                    videoPlayer.play().catch(() => {});
+                }
             }
 
-            videoPlayer.load();
             videoModalBackdrop.classList.add('active');
             document.body.style.overflow = 'hidden';
-
-            // Coba putar otomatis
-            const playPromise = videoPlayer.play();
-            if (playPromise !== undefined) {
-                playPromise.catch(error => {
-                    // Autoplay tercegah oleh kebijakan browser, user bisa tekan tombol play
-                    console.log('Video autoplay stopped, user can click play', error);
-                });
-            }
         }
 
         function closeVideoModal() {
-            videoPlayer.pause();
-            videoPlayer.src = '';
-            while (videoPlayer.firstChild) {
-                videoPlayer.removeChild(videoPlayer.firstChild);
+            if (videoIframe) {
+                videoIframe.src = '';
+            }
+            if (videoPlayer) {
+                videoPlayer.pause();
+                videoPlayer.src = '';
+                while (videoPlayer.firstChild) {
+                    videoPlayer.removeChild(videoPlayer.firstChild);
+                }
             }
             videoModalBackdrop.classList.remove('active');
             document.body.style.overflow = '';
